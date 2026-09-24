@@ -1,0 +1,361 @@
+/* ========================================
+   NOCHES DE COLOMBIA - MONTCLAIR
+   DISEÑO NFC
+======================================== */
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #291509 0%,
+            #111111 30%,
+            #050505 75%
+        );
+
+    color: white;
+
+    text-align: center;
+
+    min-height: 100vh;
+
+    padding: 40px 18px;
+}
+
+
+/* ---------- CONTENEDOR ---------- */
+
+.contenedor {
+    width: 100%;
+    max-width: 470px;
+    margin: auto;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    width: 145px;
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #f58a2a;
+
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 0 0 7px rgba(245, 138, 42, 0.08),
+        0 12px 35px rgba(0, 0, 0, 0.7),
+        0 0 28px rgba(245, 138, 42, 0.18);
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 14px;
+
+    color: #f58a2a;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.6px;
+
+    margin-bottom: 14px;
+}
+
+.descripcion {
+    color: #b5b5b5;
+
+    font-size: 15px;
+
+    margin-bottom: 34px;
+}
+
+
+/* ---------- BOTONES ---------- */
+
+.botones {
+    width: 100%;
+
+    margin-bottom: 38px;
+}
+
+.boton {
+    width: 100%;
+
+    min-height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 16px 20px;
+
+    margin-bottom: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #202020,
+            #121212
+        );
+
+    border: 1px solid #353535;
+
+    border-radius: 16px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.45);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ---------- ICONOS ---------- */
+
+.boton i {
+    width: 24px;
+
+    color: #f58a2a;
+
+    font-size: 19px;
+
+    text-align: center;
+}
+
+
+/* ---------- EFECTO BOTONES ---------- */
+
+.boton:hover {
+    transform: translateY(-3px);
+
+    border-color: #f58a2a;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.55),
+        0 0 18px rgba(245, 138, 42, 0.15);
+}
+
+.boton:active {
+    transform: scale(0.98);
+}
+
+
+/* ---------- BOTÓN RESEÑA ---------- */
+
+.boton-resena {
+    background:
+        linear-gradient(
+            135deg,
+            #ff9938,
+            #ed710e
+        );
+
+    border: none;
+
+    box-shadow:
+        0 10px 30px rgba(245, 138, 42, 0.28);
+}
+
+.boton-resena i {
+    color: white;
+}
+
+.boton-resena:hover {
+    border: none;
+
+    box-shadow:
+        0 13px 35px rgba(245, 138, 42, 0.42);
+}
+
+
+/* ---------- INFORMACIÓN ---------- */
+
+.informacion {
+    width: 100%;
+
+    padding: 28px 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(31, 31, 31, 0.96),
+            rgba(14, 14, 14, 0.96)
+        );
+
+    border: 1px solid #292929;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.42);
+}
+
+
+/* ---------- TÍTULOS INFORMACIÓN ---------- */
+
+.informacion h3 {
+    color: #f58a2a;
+
+    font-size: 16px;
+
+    margin-bottom: 9px;
+}
+
+.informacion h3 i {
+    color: #f58a2a;
+
+    margin-right: 7px;
+}
+
+
+/* ---------- TEXTO INFORMACIÓN ---------- */
+
+.informacion p {
+    color: #c0c0c0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- SEPARADORES ---------- */
+
+.separador {
+    width: 55px;
+
+    height: 1px;
+
+    background: #383838;
+
+    margin: 23px auto;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 35px;
+
+    padding-bottom: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+footer span {
+    color: #999;
+
+    font-size: 13px;
+}
+
+footer small {
+    color: #555;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   DISEÑO PARA CELULAR
+======================================== */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 30px 16px 35px;
+    }
+
+    .contenedor {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 125px;
+        height: 125px;
+
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 12px;
+
+        letter-spacing: 1.4px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+
+        margin-bottom: 28px;
+    }
+
+    .boton {
+        min-height: 58px;
+
+        font-size: 15px;
+
+        border-radius: 14px;
+    }
+
+    .boton i {
+        font-size: 18px;
+    }
+
+    .informacion {
+        padding: 25px 18px;
+
+        border-radius: 18px;
+    }
+}
